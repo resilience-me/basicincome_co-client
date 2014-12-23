@@ -1,0 +1,274 @@
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+}
+
+h1 {
+  color: #333333;
+  font-weight:lighter;
+  font-size:36px;
+}
+
+
+.img-bitcoin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+
+  height: 100px;
+  width: auto;
+}
+
+.pitch-container {
+
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  width: 50%;
+    
+}
+
+.login-form-container {
+    
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+    
+width:30%;
+
+    
+}
+
+
+
+
+.submit-btn-container {
+  width: 50%;
+  margin: 30px auto 20px;
+}
+
+.submit-btn-container .btn {
+  min-height: 60px;
+
+}
+
+
+.btn {
+
+display: inline-block; 
+padding: 10px 15px; 
+margin-bottom: 0; 
+font-size: 14px; 
+font-weight: normal; 
+line-height: 1.428571429; 
+text-align: center; 
+white-space: nowrap; 
+vertical-align: middle; 
+cursor: pointer; 
+border: 1px solid transparent; 
+border-radius: 4px; 
+-webkit-user-select: none; 
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+
+
+
+
+/* LOGIN FORM */
+
+.ripple-addon {
+  font-size: 18px;
+}
+
+
+
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.input-group.col {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.input-group .form-control {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 45px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+select.input-group-lg > .form-control,
+select.input-group-lg > .input-group-addon,
+select.input-group-lg > .input-group-btn > .btn {
+  height: 45px;
+  line-height: 45px;
+}
+
+textarea.input-group-lg > .form-control,
+textarea.input-group-lg > .input-group-addon,
+textarea.input-group-lg > .input-group-btn > .btn {
+  height: auto;
+}
+
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+select.input-group-sm > .form-control,
+select.input-group-sm > .input-group-addon,
+select.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  line-height: 30px;
+}
+
+textarea.input-group-sm > .form-control,
+textarea.input-group-sm > .input-group-addon,
+textarea.input-group-sm > .input-group-btn > .btn {
+  height: auto;
+}
+
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.input-group-addon {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.input-group-addon.input-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.input-group-addon.input-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-addon:first-child {
+  border-right: 0;
+}
+
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.input-group-addon:last-child {
+  border-left: 0;
+}
+
+.input-group-btn {
+  position: relative;
+  white-space: nowrap;
+}
+
+.input-group-btn > .btn {
+  position: relative;
+}
+
+.input-group-btn > .btn + .btn {
+  margin-left: -4px;
+}
+
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:active {
+  z-index: 2;
+}
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 42px !important;
+padding: 10px 15px !important; 
+font-size: 14px; 
+line-height: 1.428571429; 
+  color: #555555;
+vertical-align: middle; 
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); 
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
+  -webkit-transition: all border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s ease-out;
+     -moz-transition: all border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s ease-out;
+       -o-transition: all border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s ease-out;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: all border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s ease-out;
+}

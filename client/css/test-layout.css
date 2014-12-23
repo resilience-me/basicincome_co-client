@@ -1,0 +1,253 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+}
+
+h1 {
+  color: #000000;
+  font-weight:lighter;
+}
+
+
+
+.img-bitcoin {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+
+  height: 100px;
+  width: auto;
+  transition: all all 0.2s ease-in-out ease-out;
+}
+
+.img-safetynet {
+  bottom: 10px;
+  margin: 20px auto 30px;
+  width: 600px;
+}
+
+
+.block {
+  display: block; 
+
+}
+.center {
+  
+text-align:center;
+
+}
+
+.pitch-container {
+    
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+    
+width: 50%;
+
+    
+}
+
+
+.login-form-container {
+    
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+    
+width:30%;
+
+    
+}
+
+.connect-btc-container {
+    
+  margin: 30px auto 20px;
+
+width:30%;
+
+    
+}
+.btn-connect-btc {
+color: #ffffff;
+background-color: #f7931a;
+border-color: #2e5e96;
+display: block; 
+width: 100%;
+}
+
+
+.connected-btc {
+color: #ffffff;
+background-color: #f7931a;
+border-color: #2e5e96;
+display: block; 
+font-family: sans-serif;
+pointer-events: none;
+}
+
+.btn-disconnect-btc {
+color: #ffffff;
+border-color: #2e5e96;
+}
+
+.btn-delete_everything {
+background-color: #ff0000;
+
+color: #ffffff;
+border-color: #2e5e96;
+}
+
+.disconnect-btc-container {
+    
+  margin: 30px auto 20px;
+
+width:30%;
+
+    
+}
+
+.submit-btn-container {
+  width: 50%;
+  margin: 30px auto 20px;
+}
+
+
+
+
+
+
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.input-group.col {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.input-group .form-control {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+
+.btn {
+display: inline-block; 
+padding: 10px 15px; 
+margin-bottom: 0; 
+font-size: 14px; 
+font-weight: normal; 
+line-height: 1.428571429; 
+text-align: center; 
+white-space: nowrap; 
+vertical-align: middle; 
+cursor: pointer; 
+border: 1px solid transparent; 
+border-radius: 4px; 
+-webkit-user-select: none; 
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+
+.btn2 {
+padding: 10px 15px; 
+display: inline-block; 
+margin-bottom: 0; 
+font-size: 14px; 
+font-weight: normal; 
+line-height: 1.428571429; 
+text-align: center; 
+white-space: nowrap; 
+vertical-align: middle; 
+cursor: pointer; 
+border: 1px solid transparent; 
+border-radius: 4px; 
+-webkit-user-select: none; 
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+}
+
+h1 {
+  color: #000000;
+  font-weight:lighter;
+}
+
+
+.submit-btn-container {
+min-height 60px
+font-size: 16px
+
+}
+
+.btn {
+display: inline-block; 
+padding: 10px 15px; 
+margin-bottom: 0; 
+font-size: 14px; 
+font-weight: normal; 
+line-height: 1.428571429; 
+text-align: center; 
+white-space: nowrap; 
+vertical-align: middle; 
+cursor: pointer; 
+border: 1px solid transparent; 
+border-radius: 4px; 
+-webkit-user-select: none; 
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn-block {
+ display: block;
+ width:100%;
+ padding-right: 0;
+ padding-left: 0;
+}
+
+.btn-success {
+color: #ffffff;
+background-color: #f7931a;
+border-color: #2e5e96;
+}
+
+.submit-btn-container {
+ min-height: 60px;
+  width: 50%;
+  margin: 30px auto 20px;
+}

@@ -1,0 +1,75 @@
+<html ng-app = "rp" ng-controller="AppCtrl">
+<head>
+        
+        <!-- css files are rendered in order they were registered -->
+        <link rel="stylesheet" href="css/templates/bootstrap.min.css">
+        <link rel="stylesheet" href="css/tabs/login.css">
+        <link rel="stylesheet" href="css/tabs/wallet.css">
+
+            
+        <script type="text/javascript" src="js/dependencies/angular.js"></script>
+        <script type="text/javascript" src="js/dependencies/angular-route.js"></script>
+        <script type="text/javascript" src="js/dependencies/angular-bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/dependencies/angular-spinner.js"></script>
+        <script type="text/javascript" src="js/dependencies/spin.js"></script>
+        <script type="text/javascript" src="js/dependencies/angular-mongolab.js"></script>
+        <script type="text/javascript" src="js/dependencies/angular-websocket.js"></script>
+
+        <script type="text/javascript" src="js/dependencies/ripple-0.9.2.js"></script>
+
+
+        <script type="text/javascript" src="js/tabs/web.js"></script>
+        <script type="text/javascript" src="js/tabs/wallet.js"></script>
+        <script type="text/javascript" src="js/tabs/login.js"></script>
+        
+        
+        <!-- Angular UI BootStrap -->
+        <script type="text/javascript" src="js/tabs/modal.js"></script>
+
+        
+        <script type="text/javascript" src="js/services/network.js"></script>
+        <script type="text/javascript" src="js/services/vaultclient.js"></script>
+        <script type="text/javascript" src="js/services/btc_connected.js"></script>
+        <script type="text/javascript" src="js/services/mongodb.js"></script>
+        <script type="text/javascript" src="js/services/userblob.js"></script>
+
+
+</head>      
+
+
+<body id="main_layout">
+    
+  <!-- header ng-show="navbar_visible">
+           <nav role="navigation" ng-controller="AppCtrl" class="navbar ng-scope" style="font-family: sans-serif">
+           <div class="mainnav">
+           <div class="container">
+               <div class="navbar-header">
+        </div>
+
+                           <ul class="nav navbar-nav topMenu">
+                           <li id="nav-wallet"><a href="#/wallet">Wallet</a></li>
+                           <li id="nav-send"><a href="#/charts">Charts</a></li>
+                           <li id="nav-send"><a href="#/passports">Passports</a></li>
+                           </ul>
+                           <ul class="nav navbar-nav navbar-right">
+                               <li><a href="#/account">~{{username}}</a></li>
+                                <li id="nav-send"><a href="#/about">Introduction</a></li>
+
+                               <li class="divider"></li><li><a ng-click="logout()" class="logout"><i class="icon-logout"></i> Log Out</a></li>
+                               </ul>
+                            </div></div>
+                            </nav>
+                               
+
+</header --> 
+    
+<div  ng-view></div>
+  
+  
+  
+
+       </body> 
+       
+
+
+</html>

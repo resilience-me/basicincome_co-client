@@ -1,0 +1,55 @@
+<div ng-controller="WalletCtrl">
+    
+    <div class="connect-btc-container" style="  font-family: 'Sans-Serif';">
+
+<button ng-hide="btc_connected" ng-click="create()" class="btn btn-submit btn-block btn-connect-btc">Connect BTC @ 2%</button>
+
+
+</div>
+<div ng-show="btc_connected">
+
+<button ng-show="btc_connected" class="connected-btc btn btn-submit btn-block ">Connected :)</button>
+
+
+    <div class="disconnect-btc-container">
+
+<button ng-show="btc_connected" ng-click="remove()" class="btn btn-submit btn-block btn-disconnect-btc">Disconnect BTC @ 2%</button>
+
+</div>
+
+
+    <div class="submit-btn-container">
+
+<span class="center sans-serif block font36" style="font-size:26px">Your safety-net is {{safety_net}} BTC</span>
+<img class="img-safetynet" src="img/network3.png">
+</div>
+
+    <div class="submit-btn-container">
+
+<span class="center sans-serif block font36" style="font-size:26px">UNDECLARED TAX: {{total_amount}}</span>
+
+<button id="submit" ng-click="update_values()" class="btn btn-block btn-connect-btc">Declare tax</button>
+
+
+</div>
+
+
+
+<div ng-controller="ModalDemoCtrl">
+
+    <div class="disconnect-btc-container">
+
+<button ng-show="btc_connected" ng-click="open()" class="btn btn-submit btn-block btn-delete_everything">Disconnect and delete everything</button>
+
+</div>
+
+</div>
+
+
+
+
+
+</div> 
+
+
+

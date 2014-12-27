@@ -15,7 +15,7 @@ this.disconnect = function() {
 
 this.check = function(){
 
-if(typeof $scope.userBlob.data.flat_btc_basicincome_co !== "undefined"){
+if(typeof $scope.userBlob.data.basicincome_co !== "undefined"){
 $scope.connected = true
 }
 else $scope.connected = false

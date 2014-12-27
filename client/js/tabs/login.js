@@ -3,10 +3,23 @@ var module = angular.module('rp');
 
 
 
-  module.controller('BlobCtrl', ['$rootScope', '$location', '$network', '$vaultClient',  'usSpinnerService', 'WebSocket',
-    function ($scope, $location, $network, $vaultClient, usSpinnerService, WebSocket)
+  module.controller('BlobCtrl', ['$rootScope', '$location', '$network', '$vaultClient',  'usSpinnerService', 'WebSocket', '$window',
+    function ($scope, $location, $network, $vaultClient, usSpinnerService, WebSocket, $window)
   {
-    
+   
+// iframe width/height video on the login page
+
+var w = angular.element($window);
+w.bind('resize', function () {
+video_width()
+})
+function video_width(){
+var h = document.getElementById('introduction_movie').offsetWidth;
+document.getElementById('introduction_movie').style.height = h*0.5625
+}
+video_width()
+
+
 
  $scope.startSpin = function(){
         usSpinnerService.spin('spinner-1');

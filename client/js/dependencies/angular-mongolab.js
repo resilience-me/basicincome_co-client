@@ -146,6 +146,11 @@ angular.module('mongolabResourceHttp', [])
             return $http['delete'](collectionUrl + "/" + this.$id(), {params: defaultParams}).then(resourceRespTransform);
         };
         
+        
+        Resource.prototype.$delete_collection = function () {
+            return $http['delete'](collectionUrl, {params: defaultParams}).then(resourceRespTransform);
+        };
+        
 
 
         return Resource;

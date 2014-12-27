@@ -1,0 +1,27 @@
+<form ng-submit="ok()">
+
+        <div class="modal-body" >
+       
+       
+<label for="login_username">Ripple name</label>
+<div class="input-group">
+<span class="input-group-addon ripple-addon">~</span>
+<input id="login_username" name="login_username" type="text" ng-model="username" class="form-control"/>
+</div>
+<label for="login_password">Password</label>
+<div class="form-group">
+<input id="login_password" name="login_password" type="password" ng-model="password" class="form-control"/>
+</div>
+        </div>
+        
+        <div class="modal-footer">
+            <button type="submit" id="submit" class="btn btn-primary">Pay dividends</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                         <span us-spinner spinner-key="spinner-2"></span>
+
+        </div>
+        
+                   </form>
+
+        
+

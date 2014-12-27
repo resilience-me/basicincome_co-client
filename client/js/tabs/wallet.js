@@ -12,18 +12,18 @@ $connection_status.check()
      */
     $scope.create = function ()
     {
-      var flat_btc_basicincome_co = {
-        currency: "BTC",
+      var basicincome_co = {
+        currency: "RES",
         taxRate: 0.02
       };
      
 
       // Add an element
-      $scope.userBlob.unshift("/flat_btc_basicincome_co", flat_btc_basicincome_co);
+      $scope.userBlob.unshift("/basicincome_co", basicincome_co);
 
 MongoDB.collection($scope.userBlob.data.account_id)
 
-         var wallet = {type: "wallet", currency: flat_btc_basicincome_co.currency, taxRate: flat_btc_basicincome_co.taxRate}
+         var wallet = {type: "contract", currency: basicincome_co.currency, taxRate: basicincome_co.taxRate}
 
                 new MongoDB(wallet).$save().then(function (data) {
                                 console.log(data);
@@ -46,13 +46,13 @@ $connection_status.connect()
         $scope.remove = function (currency) {
         
         // Update blob
-        $scope.userBlob.unset('/flat_btc_basicincome_co');
+        $scope.userBlob.unset('/basicincome_co');
         
         
         // remove from MongoDB
         MongoDB.collection($scope.userBlob.data.account_id)
                     
-          MongoDB.query({type: "wallet"}).then(function(data){
+          MongoDB.query({type: "contract"}).then(function(data){
                       
             var temp = data
             var id

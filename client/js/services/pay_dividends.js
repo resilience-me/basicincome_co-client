@@ -1,39 +1,10 @@
-var app = angular.module('rp', ['ng', 'ngRoute', 'ui.bootstrap', 'angularSpinner', 'angular-websocket', 'mongolabResourceHttp']);
+var module = angular.module('rp');
 
-app.config(function(WebSocketProvider){
-    WebSocketProvider
-      .prefix('')
-      .uri('wss://basicincomeco-41322.onmodulus.net/:443');
-  });
-  
-app.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/', {templateUrl: 'login.html', controller: 'AppCtrl'}).
-      when('/wallet', {templateUrl: 'wallet.html', controller: 'WalletCtrl'}).
-      when('/charts', {templateUrl: 'charts.html', controller: 'ChartsCtrl'}).
-      when('/account', {templateUrl: 'account.html', controller: 'AppCtrl'}).
-      when('/about', {templateUrl: 'about.html', controller: 'AppCtrl'}).
-      when('/passports', {templateUrl: 'passports.html', controller: 'AppCtrl'}).
-
-      otherwise({redirectTo: '/'
-      });
-  }]);
-
-
-
-// a factory for MongoLabs API
-
-app.constant('MONGOLAB_CONFIG',{API_KEY:'_5sK-6UJIaR72iqjdI0lHAo7l90nA9yp', DB_NAME:'basicincome_co'});
-
-
-
-
-app.controller('AppCtrl', ['$scope', 'WebSocket', '$network', '$vaultClient',
-    function ($scope, WebSocket, $network, $vaultClient) {
-   
-   
-   $scope.update_values = function(secret){
+module.service('$pay_dividends', ['$rootScope', 'WebSocket', '$network', function($scope, WebSocket, $network)
+{
+    
+  this.submit = function(secret){
+      console.log(secret)
       var SEND = []
       SEND.push({account_id: $scope.userBlob.data.account_id})
 
@@ -61,8 +32,9 @@ app.controller('AppCtrl', ['$scope', 'WebSocket', '$network', '$vaultClient',
         i++
         if(i<payments.length)loop()
       }
+      loop(secret)
       });
-   }
+   
         
         
         
@@ -84,16 +56,6 @@ app.controller('AppCtrl', ['$scope', 'WebSocket', '$network', '$vaultClient',
          else console.log(res), WebSocket.send(JSON.stringify(res));
     });
 }//end send_payment()  
-
-
-$scope.logout = function(){
-  window.location.assign("http://basicincome.co")
-}
-      
-
-
-    }]);
+  }
     
-    
-    
-    
+}]);

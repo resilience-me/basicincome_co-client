@@ -13,17 +13,18 @@
 
     <div class="submit-btn-container">
 
-<span class="center sans-serif block font36" style="font-size:26px">Your safety-net is {{safety_net}} {{userBlob.data.flat_btc_basicincome_co[0].currency}}</span>
+<span class="center sans-serif block font36" style="font-size:26px">Your safety-net is {{safety_net}} {{userBlob.data.basicincome_co[0].currency}}</span>
 <img class="img-safetynet" src="img/network3.png">
 <p><i><a>view on graph.basicincome.co (coming soon)</a></i></p>
 </div>
 
     <div class="submit-btn-container">
+<div ng-controller="login_modalCtrl">
 
 <span class="center sans-serif block font36" style="font-size:26px">UNDECLARED TAX: {{total_amount}}</span>
 
-<button id="submit" ng-click="update_values()" class="btn btn-block btn-connect-btc">Declare tax (this is the only time the app reads your secret key)</button>
-
+<button ng-click="open()" class="btn btn-block btn-connect-btc">Declare tax</button>
+</div>
 
 </div>
 

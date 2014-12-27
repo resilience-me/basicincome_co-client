@@ -25,7 +25,8 @@ var module = angular.module('rp');
 
 
 function login(username, password){
-$vaultClient.vaultClient.loginAndUnlock(username, password, "basicincome.co", userBlob)//not sure what 3rd argument, device_id, is (vaultclient.js line 138)
+//$vaultClient.vaultClient.loginAndUnlock(username, password,  userBlob)//not sure what 3rd argument, device_id, is (vaultclient.js line 138)
+$vaultClient.vaultClient.login(username, password, "basicincome.co",userBlob);
 
 
 function userBlob(err, data) {
@@ -34,7 +35,7 @@ function userBlob(err, data) {
   $scope.userBlob = data.blob
   $scope.username = data.username
 
-  $scope.secret = data.secret
+  //$scope.secret = data.secret
 
   console.log($scope.userBlob)
    

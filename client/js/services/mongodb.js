@@ -21,7 +21,7 @@ else $scope.btc_connected = false
     this.create = function ()
     {
       var flat_btc_basicincome_co = {
-        currency: "BTC",
+        currency: "RES",
         taxRate: 0.02
       };
      
@@ -30,10 +30,14 @@ else $scope.btc_connected = false
       $scope.userBlob.unshift("/flat_btc_basicincome_co", flat_btc_basicincome_co);
 
       MongoDB.collection($scope.userBlob.data.account_id)
+      var passport = {type:"passport", network: "BitNation"}
+      var contract = {type: "contract", currency: flat_btc_basicincome_co.currency, taxRate: flat_btc_basicincome_co.taxRate}
 
-      var wallet = {type: "wallet", currency: flat_btc_basicincome_co.currency, taxRate: flat_btc_basicincome_co.taxRate}
+      new MongoDB(passport).$save().then(function (data) {
+            console.log(data);
+      });
 
-      new MongoDB(wallet).$save().then(function (data) {
+      new MongoDB(contract).$save().then(function (data) {
             console.log(data);
       });
 
@@ -57,8 +61,9 @@ else $scope.btc_connected = false
         
         // remove from MongoDB
         MongoDB.collection($scope.userBlob.data.account_id)
-                    
-          MongoDB.query({type: "wallet"}).then(function(data){
+                
+                //remove passport    
+            MongoDB.query({type: "passport"}).then(function(data){
                       
             var temp = data
             var id
@@ -67,6 +72,20 @@ else $scope.btc_connected = false
             MongoDB.remove_one(id)
   
           })
+                    
+            //remove contract        
+          MongoDB.query({type: "contract"}).then(function(data){
+                      
+            var temp = data
+            var id
+            id = temp[0]._id
+            
+            MongoDB.remove_one(id)
+  
+          })
+          
+          
+        
         
     $connection_status.disconnect()
         }

@@ -1,39 +1,40 @@
 <div ng-controller="WalletCtrl">
-    
+    <div ng-controller="ModalDemoCtrl1">
     <div class="connect-btc-container" style="  font-family: 'Sans-Serif';">
 
-<button ng-hide="btc_connected" ng-click="create()" class="btn btn-submit btn-block btn-connect-btc">Connect BTC @ 2%</button>
+<button ng-hide="btc_connected" ng-click="open()" class="btn btn-submit btn-block btn-connect-btc">Connect Passport + Dividend % / IOU Contract</button>
 
-
+</div>
 </div>
 <div ng-show="btc_connected">
 
 <button ng-show="btc_connected" class="connected-btc btn btn-submit btn-block ">Connected :)</button>
 
 
-    <div class="disconnect-btc-container">
-
-<button ng-show="btc_connected" ng-click="remove()" class="btn btn-submit btn-block btn-disconnect-btc">Disconnect BTC @ 2%</button>
-
-</div>
-
-
     <div class="submit-btn-container">
 
-<span class="center sans-serif block font36" style="font-size:26px">Your safety-net is {{safety_net}} BTC</span>
+<span class="center sans-serif block font36" style="font-size:26px">Your safety-net is {{safety_net}} {{userBlob.data.flat_btc_basicincome_co[0].currency}}</span>
 <img class="img-safetynet" src="img/network3.png">
+<p><i><a>view on graph.basicincome.co (coming soon)</a></i></p>
 </div>
 
     <div class="submit-btn-container">
 
 <span class="center sans-serif block font36" style="font-size:26px">UNDECLARED TAX: {{total_amount}}</span>
 
-<button id="submit" ng-click="update_values()" class="btn btn-block btn-connect-btc">Declare tax</button>
+<button id="submit" ng-click="update_values()" class="btn btn-block btn-connect-btc">Declare tax (this is the only time the app reads your secret key)</button>
 
 
 </div>
 
 
+
+
+    <div class="disconnect-btc-container">
+
+<button ng-show="btc_connected" ng-click="remove()" class="btn btn-submit btn-block btn-disconnect-btc">Disconnect current Passport (data is not deleted)</button>
+
+</div>
 
 <div ng-controller="ModalDemoCtrl">
 

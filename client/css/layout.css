@@ -8,12 +8,16 @@
   width: auto;
 }
 
+.h1 {
+    padding:20px 15px 20px 30px;  
+
+}
+
 .pitch-container {
 
   position: absolute;
   bottom: 60px;
   left: 20px;
-    
 width: 50%;
 
     

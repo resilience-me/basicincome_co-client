@@ -1,14 +1,14 @@
 <div ng-controller="WalletCtrl">
-    <div ng-controller="ModalDemoCtrl1">
+    <div ng-controller="connect_modalCtrl">
     <div class="connect-btc-container" style="  font-family: 'Sans-Serif';">
 
-<button ng-hide="btc_connected" ng-click="open()" class="btn btn-submit btn-block btn-connect-btc">Connect Passport + Dividend % / IOU Contract</button>
+<button ng-hide="connected" ng-click="open()" class="btn btn-submit btn-block btn-connect-btc">Connect Passport + Dividend % / IOU Contract</button>
 
 </div>
 </div>
-<div ng-show="btc_connected">
+<div ng-show="connected">
 
-<button ng-show="btc_connected" class="connected-btc btn btn-submit btn-block ">Connected :)</button>
+<button ng-show="connected" class="connected-btc btn btn-submit btn-block ">Connected :)</button>
 
 
     <div class="submit-btn-container">
@@ -32,15 +32,15 @@
 
     <div class="disconnect-btc-container">
 
-<button ng-show="btc_connected" ng-click="remove()" class="btn btn-submit btn-block btn-disconnect-btc">Disconnect current Passport (data is not deleted)</button>
+<button ng-show="connected" ng-click="remove()" class="btn btn-submit btn-block btn-disconnect-btc">Disconnect current Passport (data is not deleted)</button>
 
 </div>
 
-<div ng-controller="ModalDemoCtrl">
+<div ng-controller="delete_everything_modalCtrl">
 
     <div class="disconnect-btc-container">
 
-<button ng-show="btc_connected" ng-click="open()" class="btn btn-submit btn-block btn-delete_everything">Disconnect and delete everything</button>
+<button ng-show="connected" ng-click="open()" class="btn btn-submit btn-block btn-delete_everything">Disconnect and delete everything</button>
 
 </div>
 

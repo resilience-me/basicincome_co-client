@@ -1,4 +1,4 @@
-angular.module('rp').controller('ModalDemoCtrl',
+angular.module('rp').controller('delete_everything_modalCtrl',
 function ($scope, $modal, $log) {
 
 
@@ -8,7 +8,7 @@ function ($scope, $modal, $log) {
   $scope.open = function (size) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
+      templateUrl: 'delete_everything_modal.html',
       controller: 'ModalInstanceCtrl',
       size: size,
       resolve: {

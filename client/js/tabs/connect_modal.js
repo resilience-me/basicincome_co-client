@@ -1,4 +1,4 @@
-angular.module('rp').controller('ModalDemoCtrl1',
+angular.module('rp').controller('connect_modalCtrl',
 function ($scope, $modal, $log) {
 
 

@@ -10,9 +10,9 @@ angular.module('rp').service('$MongoDB', ['$rootScope', 'MongoDB', '$connection_
   
   
 if(typeof $scope.userBlob.data.flat_btc_basicincome_co !== "undefined"){
-$scope.btc_connected = true
+$scope.connected = true
 }
-else $scope.btc_connected = false
+else $scope.connected = false
     
     
     /**

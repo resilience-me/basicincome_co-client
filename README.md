@@ -39,3 +39,8 @@ And there´s also a layer that adds natural selection to what % of dividend tax 
 <a href="http://ucoin.io">http://ucoin.io</a>
 
 <a href="http://rippledividend.com">http://rippledividend.com</a>
+
+
+<b>How to boot up:<b>
+
+Deploy to <a href="http://modulus.io">modulus.io</a>. That´s all you need to do :)

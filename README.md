@@ -22,6 +22,9 @@ Because of this design, any currency that is transacted on the ripple network ca
 *version 2.0 should be integrated directly with the ripple-protocol.
 
 
+<b>The concepts<b>
+
+
 <a href="http://graph.basicincome.co">graph.basicincome.co</a> shows my <i>peer-to-peer dividend pathway</i> concepts, basically that safety net emerge from the sum of a persons financial transactions, and p2p, and this integrates really well with <b>Ripple</b>.
 
 

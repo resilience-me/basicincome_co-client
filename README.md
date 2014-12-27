@@ -9,10 +9,6 @@
 ## http://basicincome.co
 
 <b>Introduction</b>
-<<<<<<< HEAD
-
-=======
->>>>>>> 68dcc5471a7a0ff8ea4f1c03f08fc1337101bfdf
 Basicincome.co is a #DApp built on <a href="http://ripple.com">Ripple.com</a>. The #DApp is the brainchild of the young swedish prodigy Johan Nygren, and part of his philosophical work <a href="http://www.resilience.me/">How to Create Resilience</a>. Basicincome.co introduces some new concepts, such as a <a href="https://www.youtube.com/watch?v=sosu1YsR_Wo">THE INCENTIVE LAYER</a>, <a href="http://graph.basicincome.co">peer-to-peer dividend pathways</a>, and hints at a future feature called <a href="http://www.resilience.me/whitepaper-decentralised-taxrate-governance.html">decentralized taxRate governance</a>.
 
 

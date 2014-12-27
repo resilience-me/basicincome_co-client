@@ -21,12 +21,18 @@ Because of this design, any currency that is transacted on the ripple network ca
 
 *version 2.0 should be integrated directly with the ripple-protocol.
 
+
 <a href="http://graph.basicincome.co">graph.basicincome.co</a> shows my <i>peer-to-peer dividend pathway</i> concepts, basically that safety net emerge from the sum of a persons financial transactions, and p2p, and this integrates really well with <b>Ripple</b>.
+
+
 There´s <a href="http://www.resilience.me/introduction-the-incentive-layer.html">the incentive layer</a>, something I´ve invented.
+
 
 And there´s also a layer that adds natural selection to what % of dividend tax network clusters should use, but I skip that for version 1.0. I can rant about it and teach you about it if you want to, my ideas extend further then this app.
 
 
 <b>Other #basicincome/dividend #DApps</b>
+
 <a href="http://ucoin.io">http://ucoin.io</a>
+
 <a href="http://rippledividend.com">http://rippledividend.com</a>

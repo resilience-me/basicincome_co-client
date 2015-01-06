@@ -26,11 +26,11 @@ module.service('$pay_dividends', ['$rootScope', 'WebSocket', '$network', functio
       
       var i = 0
       function loop(secret){
-      
+      console.log("loop through payments for: "+secret)
       send_payment($scope.userBlob.data.account_id, secret, payments[i].account, payments[i].amount, $scope.userBlob.data.basicincome_co[0].currency)
       
         i++
-        if(i<payments.length)loop()
+        if(i<payments.length)loop(secret)
       }
       loop(secret)
       });

@@ -7,6 +7,13 @@ module = angular.module('rp')
 $connection_status.check()
     
     
+    
+    $scope.graph = function() {
+      
+    var url = "http://graph_dev.basicincome.co/#" + $scope.userBlob.data.account_id   
+  window.location.assign(url)
+    }
+    
     /**
      * Add a currency
      */
@@ -72,10 +79,10 @@ $connection_status.disconnect()
         
         MongoDB.collection($scope.userBlob.data.account_id)
     
-    MongoDB.query({ type: "safety_net" }).then(function(data){
+    MongoDB.query({ type: "total_safety_net" }).then(function(data){
           var temp = data
-
-    $scope.safety_net = data[0].total_pathway
+    console.log(data)
+    $scope.total_safety_net = temp[0].total_pathway
 
     });
   
